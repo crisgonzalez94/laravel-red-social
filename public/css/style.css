@@ -1,0 +1,33 @@
+.text_image_nick , .text_comment_nick{
+    color: grey;
+}
+
+.text_image_description{
+    font-size: 20px;
+    color: gray;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.pagination{
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+    margin-bottom: 10px;
+}
+
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding: 0;
+}
+
+.icon-like{
+    width: 20px;
+    position: relative;
+    float: left;
+    margin-left: 0;
+}

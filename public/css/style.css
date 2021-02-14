@@ -9,6 +9,17 @@
     margin-right: 5px;
 }
 
+.text_image_likes{
+    float: left;
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+.like_box{
+    background: green;
+    float: left;
+}
+
 .pagination{
     align-items: center;
     text-align: center;
@@ -28,6 +39,7 @@
 .icon-like{
     width: 20px;
     position: relative;
+    display: inline-flex;
     float: left;
     margin-left: 0;
 }

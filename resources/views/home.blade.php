@@ -44,10 +44,11 @@
                                     ({{count($image->comments)}})
                                 </a>
                             </div>
-                            <div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                                <!--Boton de like-->
-                                <img src="{{ asset('img/like-outline.svg') }}" alt="" class="icon-like">
-                            </div>
+
+
+                            <!--Likes===================================-->
+                            @include('like.like')
+                            <!--========================================-->
                             
 
                         

@@ -28,4 +28,4 @@ Route::get('image/detail/{id}' , [ImageController::class , 'detail'])->name('ima
 
 //Ruta para comentar
 Route::post('comment/create' , [CommentController::class , 'create'])->name('comment.create');
-Route::get('comment/delete/{id}' , [CommentController::class , 'create'])->name('comment.delete');
+Route::get('comment/delete/{comment_id}/{image_id}' , [CommentController::class , 'delete'])->name('comment.delete');

@@ -42,11 +42,16 @@ class CommentController extends Controller{
 
     }
 
-    public function delete($id){
+    public function delete($comment_id , $image_id){
 
-        echo $id;
-        die();
+        echo "comment_id: ".$comment_id."<br>";
+        echo "image_id: ".$image_id."<br>";
 
+        $delete = DB::table('comments')->where('id' , '=' , $comment_id )->delete();
+
+        return redirect()->route('image.detail' , ['id' => $image_id])->with([
+            'message' => 'Su comentario se borro con exito.'
+        ]);
     }
 
 }
